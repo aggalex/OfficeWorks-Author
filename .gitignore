@@ -1,0 +1,7 @@
+build/*
+debian/build/*
+debian/com.github.aggalex.ow-author.debhelper.log
+debian/com.github.aggalex.ow-author.substvars
+debian/com.github.aggalex.ow-author/
+debian/debhelper-build-stamp
+debian/files

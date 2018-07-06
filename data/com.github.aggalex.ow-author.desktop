@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Officeworks Author
+Comment=The modern text editor
+Icon=com.github.aggalex.ow-author
+Exec=com.github.aggalex.ow-author
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;
+Keywords=app;vala;
