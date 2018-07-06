@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Name=Catagraphy
+Comment=Record your voice with your microphone
+GenericName=Recorder
+Exec=python /home/alex/Programs/python/recorder/granite.py
+Icon=media-record
+Terminal=false
+Categories=GNOME;AudioVideo;
+Keywords=Record;Voice;Sound;Audio;
+StartupNotify=true
+Actions=AboutDialog;
+
+[Desktop Action AboutDialog]
+Exec=
+Name=
