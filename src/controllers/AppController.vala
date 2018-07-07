@@ -28,7 +28,8 @@ namespace App.Controllers {
     public class AppController {
 
         private Gtk.Application            application;
-        private AppView                    app_view;
+        private EditView                   edit_view;
+        private ToolBox                    tool_box;
         private Gtk.HeaderBar              headerbar;
         private Gtk.ApplicationWindow      window { get; private set; default = null; }
 
@@ -36,23 +37,29 @@ namespace App.Controllers {
          * Constructs a new {@code AppController} object.
          */
         public AppController (Gtk.Application application) {
+
             this.application = application;
             this.window = new Window (this.application);
             this.headerbar = new HeaderBar ();
-            this.app_view = new AppView ();
+            this.edit_view = new EditView ();
+            this.tool_box = new ToolBox ();
 
-            this.window.add (this.app_view);
-            this.window.set_default_size (800, 640);
-            this.window.set_size_request (800, 640);
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+            paned.pack1 (this.tool_box, true, false);
+            paned.pack2 (this.edit_view, true, true);
+            paned.set_position (260);
+
+            this.window.add (paned);
+            this.window.set_default_size (1300, 800);
+            this.window.set_size_request (1300, 800);
             this.window.set_titlebar (this.headerbar);
             this.application.add_window (window);
-
-            
+           
         }
 
         public void activate () {
             window.show_all ();
-            app_view.activate ();
+            edit_view.activate ();
         }
 
         public void quit () {

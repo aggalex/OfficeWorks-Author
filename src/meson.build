@@ -4,9 +4,11 @@ sources += files(
     
     'controllers/AppController.vala',
     
-    'views/AppView.vala',
+    'views/EditView.vala',
+    'views/ToolBox.vala',
 
     'widgets/HeaderBar.vala',
+    'widgets/TextBuffer.vala',
 
     'Application.vala',
     'Main.vala',
