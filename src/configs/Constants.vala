@@ -39,6 +39,8 @@ namespace App.Configs {
         public abstract const string TEXT_FOR_ABOUT_DIALOG_WEBSITE = "Website";
         public abstract const string TEXT_FOR_ABOUT_DIALOG_WEBSITE_URL = "{{ website-url }}";
         public abstract const string URL_CSS = "/com/github/aggalex/ow-author/css/style.css";
+        public abstract const string URL_MAIN_BT_IMAGE = "/com/github/aggalex/ow-author/images/headerbar/Icon.png";
+        public abstract const string URL_HEADERBAR_BACKGROUND = "/com/github/aggalex/ow-author/images/headerbar/headerbarbg.png";
         public abstract const string [] ABOUT_AUTHORS = { "Alex Angelou <ubuntu1aggelalex@gmail.com>" };
         public abstract const Gtk.License ABOUT_LICENSE_TYPE = Gtk.License.GPL_3_0;
     }

@@ -1,4 +1,5 @@
 icon_sizes = ['16','24','32', '48', '64', '128']
+hb_images = ['headerbarbg', 'Icon']
 
 foreach i : icon_sizes
     install_data(
@@ -16,6 +17,13 @@ install_data(
     join_paths('images', meson.project_name() + '.png'),
     install_dir: join_paths(get_option('datadir'), 'pixmaps')
 )
+
+foreach i : hb_images
+    install_data(
+        join_paths('images', 'headerbar', i + '.png'),
+        install_dir: join_paths(get_option('datadir'), 'Officeworks Author', 'images', 'headerbar')
+    )
+endforeach
 
 install_data(
     meson.project_name() + '.desktop',

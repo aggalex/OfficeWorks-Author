@@ -26,13 +26,13 @@ namespace App.Views {
      * @since 1.0.0
      */
 
-    public class ToolBox : Gtk.Box {
+    public class Navigation : Gtk.Box {
 
         /**
          * Constructs a new {@code AppView} object.
          */
 
-        public ToolBox () {
+        public Navigation () {
 
                 var OuterBox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
                 

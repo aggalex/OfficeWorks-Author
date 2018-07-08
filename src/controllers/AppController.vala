@@ -29,7 +29,7 @@ namespace App.Controllers {
 
         private Gtk.Application            application;
         private EditView                   edit_view;
-        private ToolBox                    tool_box;
+        private Navigation                    tool_box;
         private Gtk.HeaderBar              headerbar;
         private Gtk.ApplicationWindow      window { get; private set; default = null; }
 
@@ -42,16 +42,16 @@ namespace App.Controllers {
             this.window = new Window (this.application);
             this.headerbar = new HeaderBar ();
             this.edit_view = new EditView ();
-            this.tool_box = new ToolBox ();
+            this.tool_box = new Navigation ();
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.pack1 (this.tool_box, true, false);
             paned.pack2 (this.edit_view, true, true);
-            paned.set_position (260);
+            paned.set_position (10);
 
             this.window.add (paned);
             this.window.set_default_size (1300, 800);
-            this.window.set_size_request (1300, 800);
+            this.window.set_size_request (800, 640);
             this.window.set_titlebar (this.headerbar);
             this.application.add_window (window);
            
