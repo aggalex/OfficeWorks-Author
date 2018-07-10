@@ -1,5 +1,5 @@
 icon_sizes = ['16','24','32', '48', '64', '128']
-hb_images = ['headerbarbg', 'Icon']
+hb_images = ['headerbar_bg', 'main_bt_icon']
 
 foreach i : icon_sizes
     install_data(

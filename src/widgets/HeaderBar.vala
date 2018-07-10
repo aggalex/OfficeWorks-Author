@@ -94,19 +94,19 @@ namespace App.Widgets {
             this.show_close_button = true;
             this.pack_end (menu_button);
 
-//            try {
-//                var hbbgpixbuf = new Gdk.Pixbuf.from_resource_at_scale (Constants.URL_HEADERBAR_BACKGROUND, 250, 250, true);
-//                var headerbarbg = new Gtk.Image.from_pixbuf (hbbgpixbuf);
-//                this.pack_end (headerbarbg);
-//            } catch (FileError e) {
+            try {
+                var hbbgpixbuf = new Gdk.Pixbuf.from_file_at_scale (Constants.URL_HEADERBAR_BACKGROUND, 250, 250, true);
+                var headerbarbg = new Gtk.Image.from_pixbuf (hbbgpixbuf);
+                this.pack_end (headerbarbg);
+            } catch (FileError e) {
              		// Output:
              		//  ``Message: "My error msg"``
             		//  ``Error code: FileError.EXIST = 2``
             		//  ``FileErrors identification: 51``
-//            		print ("Message: Can't load headerbar background: \"%s\"\n", e.message);
-//            		print ("Error code: FileError.EXIST = %d\n", e.code);
-//            		print ("FileErrors identification: %" + uint32.FORMAT + "\n", e.domain);
-//            };
+            		print ("Message: Can't load headerbar background: \"%s\"\n", e.message);
+            		print ("Error code: FileError.EXIST = %d\n", e.code);
+            		print ("FileErrors identification: %" + uint32.FORMAT + "\n", e.domain);
+            };
         }
     }
 }

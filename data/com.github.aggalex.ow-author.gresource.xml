@@ -13,8 +13,8 @@
         <file alias="48-com.github.aggalex.ow-author.svg" compressed="true" preprocess="xml-stripblanks">images/icons/48/com.github.aggalex.ow-author.svg</file>
         <file alias="64-com.github.aggalex.ow-author.svg" compressed="true" preprocess="xml-stripblanks">images/icons/64/com.github.aggalex.ow-author.svg</file>
         <file alias="128-com.github.aggalex.ow-author.svg" compressed="true" preprocess="xml-stripblanks">images/icons/128/com.github.aggalex.ow-author.svg</file>
-        <file alias="headerbarbg.png">images/headerbar/headerbarbg.png</file>
-        <file alias="Icon.png">images/headerbar/Icon.png</file>
+        <file alias="headerbarbg.png">images/headerbar/headerbar_bg.png</file>
+        <file alias="Icon.png">images/headerbar/main_bt_icon.png</file>
     </gresource>
 
 </gresources>

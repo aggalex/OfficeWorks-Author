@@ -32,6 +32,7 @@ public class Main {
      * @return {@code int}
      * @since 1.0.0
      */
+
     public static int main (string [] args) {
         var options_context = new OptionContext (App.Configs.Constants.PROGRAME_NAME +" "+ _("Options"));
         options_context.set_help_enabled (true);
